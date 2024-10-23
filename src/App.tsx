@@ -47,7 +47,7 @@ export const App = () => {
           <div
             className={appSt.gridItem}
             onClick={() => {
-              window.gtag('event', 'ISG_8');
+              window.gtag('event', 'ISG_3531_8');
               setSelected('isz');
               setOpenBs(true);
             }}
@@ -66,7 +66,7 @@ export const App = () => {
 
           <div
             onClick={() => {
-              window.gtag('event', 'NSG_8');
+              window.gtag('event', 'NSG_3531_8');
               setSelected('nsz');
               setOpenBs(true);
             }}
@@ -87,7 +87,7 @@ export const App = () => {
           <a
             className={appSt.gridItem}
             href="alfabank://webFeature?type=recommendation&url=https%3A%2F%2Fdfa.alfabank.ru%2Fretail-investor%2Fwebview%2F%3Fchannel%3Dghk3531"
-            onClick={() => window.gtag('event', 'DFA_8')}
+            onClick={() => window.gtag('event', 'DFA_3531_8')}
           >
             <div>
               <Typography.Text view="primary-medium" tag="p" defaultMargins={false} weight="medium">
@@ -103,7 +103,7 @@ export const App = () => {
           <a
             className={appSt.gridItem}
             href="alfabank://investments/catalogue?tab=MUTUAL"
-            onClick={() => window.gtag('event', 'Fonds_8')}
+            onClick={() => window.gtag('event', 'Fonds_3531_8')}
           >
             <div>
               <Typography.Text view="primary-medium" tag="p" defaultMargins={false} weight="medium">
@@ -119,7 +119,7 @@ export const App = () => {
           <a
             className={appSt.gridItem}
             href="alfabank://investments/catalogue?tab=TRUST"
-            onClick={() => window.gtag('event', 'DU_8')}
+            onClick={() => window.gtag('event', 'DU_3531_8')}
           >
             <div>
               <Typography.Text view="primary-medium" tag="p" defaultMargins={false} weight="medium">
@@ -137,7 +137,12 @@ export const App = () => {
       <Gap size={96} />
 
       <div className={appSt.bottomBtn}>
-        <ButtonMobile block view="primary" href="alfabank://investments" onClick={() => window.gtag('event', 'Vitrina_8')}>
+        <ButtonMobile
+          block
+          view="primary"
+          href="alfabank://investments"
+          onClick={() => window.gtag('event', 'Vitrina_3531_8')}
+        >
           Витрина инвестиций
         </ButtonMobile>
       </div>
@@ -146,9 +151,9 @@ export const App = () => {
         open={openBs}
         onClose={() => {
           if (selectedItem === 'isz') {
-            window.gtag('event', 'ISG_Exit_8');
+            window.gtag('event', 'ISG_3531_Exit_8');
           } else {
-            window.gtag('event', 'NSG_Exit_8');
+            window.gtag('event', 'NSG_3531_Exit_8');
           }
           setOpenBs(false);
         }}
@@ -166,9 +171,9 @@ export const App = () => {
             }
             onClick={() => {
               if (selectedItem === 'isz') {
-                window.gtag('event', 'ISG_More_info_8');
+                window.gtag('event', 'ISG_3531_More_info_8');
               } else {
-                window.gtag('event', 'NSG_More_info_8');
+                window.gtag('event', 'NSG_3531_More_info_8');
               }
             }}
           >
@@ -192,9 +197,9 @@ export const App = () => {
             weight="regular"
             onClick={() => {
               if (selectedItem === 'isz') {
-                window.gtag('event', 'ISG_Mobile_8');
+                window.gtag('event', 'ISG_3531_Mobile_8');
               } else {
-                window.gtag('event', 'NSG_Mobile_8');
+                window.gtag('event', 'NSG_3531_Mobile_8');
               }
 
               copy('+7 495 788-88-78');
